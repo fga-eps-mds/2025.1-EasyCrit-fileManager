@@ -10,4 +10,4 @@ COPY ./app ./app
 
 COPY .env .env
 
-EXPOSE ${FILESMANAGER_PORT}
+EXPOSE ${FILE_PORT}
