@@ -10,4 +10,4 @@ EXPOSE ${PORT}
 
 FROM base as dev
 ENV PORT=${PORT}
-CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8003} --reload
+CMD fastapi dev main.py --host 0.0.0.0 --port $PORT
